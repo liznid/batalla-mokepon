@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@100;300;400;500;700;900&family=Tilt+Prism&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box
+
+}
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background: #3a0827;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b0c64, #3a0827);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b0c64, #3a0827); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.subtitulo {
+    padding: 10px;
+    color: #c995f9;
+    font-size: 24px; 
+}
+
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 15px;
+    padding: 50px;
+}
+
+.tarjeta-de-mokepon {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #725d8271;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: none;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+     
+}
+
+
+.tarjeta-de-mokepon img {
+    width: 120px;
+}
+
+.tarjeta-de-mokepon img:hover {
+    width: 180px;    
+}
+
+.tarjeta-de-mokepon p {
+    color: rgba(216, 215, 216, 0.938);
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+input {
+    display: none; 
+}
+
+input:checked + label  {
+    background: #7b1bc0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7b1bc0, #240b36);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7b1bc0, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px solid rgb(195, 169, 222);
+    box-shadow: -1px -1px 6px 2px rgb(103, 13, 212), 0px 0px 30px 2px rgb(92, 104, 235);
+    
+}
+
+#boton-mascota {
+    color: rgb(247, 254, 239);
+    width: 300px;
+    height: 60px;
+    background-color: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 60px;
+    border: 2px solid rgb(221, 189, 254);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: -1px -1px 6px 0 rgb(122, 221, 102), 4px 4px 16px 2px rgb(92, 162, 235);
+}
+
+#boton-mascota:hover {
+    background-color: #4b028b;
+}
+
+
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.contenedor-de-botones {
+    display: flex;
+    gap: 15px;
+}
+
+.contenedor-de-botones p {
+    color: #c995f9;
+}
+
+
+.boton-de-ataque1 {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(192, 1, 255);
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+
+
+.boton-de-ataque2 {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(192, 1, 255);
+    text-align: center;
+    font-size: 24px;
+
+}
+    
+
+.boton-de-ataque3 {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(192, 1, 255);
+    text-align: center;
+    font-size: 24px;
+}
+
+.boton-de-ataque1 a {
+    color:#BD0034
+    
+}
+
+
+.boton-de-ataque2 a {
+    color: aqua
+
+}
+
+.boton-de-ataque3 a {
+    color: #FDB731
+}
+
+
+
+.boton-de-ataque1:hover  {
+    border-color: red;
+   
+}
+
+
+.boton-de-ataque2:hover {
+    border-color: aqua;
+    
+}
+.boton-de-ataque3:hover {
+    border-color: #FDB731
+  
+}
+
+
+.caja-contrincantes {
+    display: flex; 
+    margin-top: 28px;
+    gap: 100px;
+    background-color: none;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+    color: #c995f9;
+    
+}
+
+
+
+.caja-contrincantes #insertar-mascota-jugador {
+    width: 400px;
+    height: 120px;  
+}
+
+#insertar-mascota-jugador img{
+    width: 200px;
+    
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+}
+
+@keyframes slidein {
+    from {
+      margin-top: 100%;
+      
+    }
+  
+    to {
+      margin-top: 0%;
+      
+    }
+  }
+
+ 
+.caja-contrincantes #insertar-mascota-enemigo {
+    width: 400px;
+    height: 120px;   
+}
+
+#insertar-mascota-enemigo img {
+    width: 200px;
+    animation-duration: 3s;
+    animation-name: slidein ;
+    
+    
+}
+
+
+
+#mensajes {
+    color: #9411d5;
+    width: 400px;
+    background: #00ffc3;
+    padding: 20px;
+    margin-top: 20px;
+    border: 4px solid #4b028b;
+    border-radius: 20px;
+    box-shadow: -1px -1px 6px 0 rgb(122, 221, 102), 4px 4px 16px 2px rgb(92, 162, 235);
+}
+
+#boton-reiniciar {
+    color: #00ffc3;
+    width: 150px;
+    font-size: 15px;
+    border: 2px solid rgb(254, 255, 253);
+    border-radius: 16px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #9e07e4;
+}
+
+#boton-reiniciar:hover {
+    border: 2px solid rgb(135, 14, 249);
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 120px 120px ;
+    margin-top: 30px;
+    gap: 40px;
+    background-color: none;
+   
+    
+    
+}
+
+.tarjeta-ataque-jugador {
+    color:  #00ffc3;
+    border: 1px solid rgb(178, 5, 252);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 10px 20px 30px 0 rgba(13, 11, 11, 0.2);
+}
+
+
+
+.tarjeta-ataque-enemigo {
+    color: #00ffc3;
+    border: 1px solid rgb(178, 5, 252);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 10px 20px 30px 0 rgba(13, 11, 11, 0.2);
+}
+
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+
+/*   probando */
+
+
+.container {
+  display: block;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'MOKEPON';
+    width: 420px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #0ce3dc;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/*   probando */
+
+@media (max-width: 390px) {
+
+    svg {
+        display: block;
+        font: 10.5em 'MOKEPON';
+        width: 250px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .tarjetas, .tarjeta-de-mokepon {
+        flex-direction: column;
+          
+    }
+
+    .tarjeta-de-mokepon {
+        margin: 15px;
+
+    }
+
+    .tarjetas #boton-mascota {
+       
+        margin: none;
+      
+    }
+
+    #seleccionar-ataque {
+        padding: 20px;
+    }
+
+    #mensajes {
+        width: 280px;
+    }
+   
+
+    .caja-contrincantes {
+        display: flex; 
+        margin-top: 28px;
+        gap: 20px;
+        background-color: none;
+        justify-content: center;
+        font-size: 20px;
+        align-items: center;
+        color: #c995f9;
+        
+    }
+
+   
+    .caja-contrincantes #insertar-mascota-jugador {
+        width: 120px;
+        height: 120px;  
+    }
+    
+    #insertar-mascota-jugador img{
+        width: 120px;
+    }
+    
+    
+    
+    .caja-contrincantes #insertar-mascota-enemigo {
+        width: 120px;
+        height: 120px;   
+    }
+    
+    #insertar-mascota-enemigo img{
+        width: 120px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    svg {
+        display: block;
+        font: 10.5em 'MOKEPON';
+        width: 360px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .tarjetas, .tarjeta-de-mokepon {
+        flex-direction: column;
+          
+    }
+
+    .tarjeta-de-mokepon {
+        margin: 15px;
+
+    }
+
+    .tarjetas #boton-mascota {
+       
+        margin: none;
+      
+    }
+
+    #seleccionar-ataque {
+        padding: 20px;
+    }
+
+    #mensajes {
+        width: 350px;
+    }
+   
+
+    .caja-contrincantes {
+        display: flex; 
+        margin-top: 28px;
+        gap: 20px;
+        background-color: none;
+        justify-content: center;
+        font-size: 20px;
+        align-items: center;
+        color: #c995f9;
+        
+    }
+
+   
+    
+    .caja-contrincantes #insertar-mascota-jugador {
+        width: 120px;
+        height: 120px;  
+    }
+    
+    #insertar-mascota-jugador img{
+        width: 120px;
+    }
+    
+    
+    
+    .caja-contrincantes #insertar-mascota-enemigo {
+        width: 120px;
+        height: 120px;   
+    }
+    
+    #insertar-mascota-enemigo img{
+        width: 120px;
+    }
+
+}
+
+ /*
+ 
+ 
+        .titulo {
+            display: flex;
+            color: rgb(248, 247, 254);
+            width: 320px;
+            height: 120px;
+            padding: 10px;
+            border: 15px;
+            justify-content: center;
+            font-size: 60px;
+        }
